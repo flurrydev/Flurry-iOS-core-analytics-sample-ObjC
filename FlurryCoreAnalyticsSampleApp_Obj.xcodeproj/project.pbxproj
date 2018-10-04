@@ -7,15 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6BBAC861E3A5686520AD23C5 /* libPods-FlurryCoreAnalyticsSampleApp_Obj.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0048A303526ABFA1ED47EADE /* libPods-FlurryCoreAnalyticsSampleApp_Obj.a */; };
 		76D3355F2166D1440085DB7D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D3355E2166D1440085DB7D /* AppDelegate.m */; };
 		76D335622166D1440085DB7D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D335612166D1440085DB7D /* ViewController.m */; };
 		76D335652166D1440085DB7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76D335632166D1440085DB7D /* Main.storyboard */; };
 		76D335672166D1450085DB7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76D335662166D1450085DB7D /* Assets.xcassets */; };
 		76D3356A2166D1450085DB7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76D335682166D1450085DB7D /* LaunchScreen.storyboard */; };
 		76D3356D2166D1450085DB7D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D3356C2166D1450085DB7D /* main.m */; };
+		76D335752166D43B0085DB7D /* FlurryAnalyticsConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D335742166D43B0085DB7D /* FlurryAnalyticsConfiguration.m */; };
+		76D335782166D80D0085DB7D /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D335772166D80D0085DB7D /* InfoViewController.m */; };
+		76D3357B2166DA010085DB7D /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D3357A2166DA010085DB7D /* SettingViewController.m */; };
+		76D335812166DAA50085DB7D /* LogErrorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D335802166DAA50085DB7D /* LogErrorViewController.m */; };
+		76D335842166DAEA0085DB7D /* SessionOriginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D335832166DAEA0085DB7D /* SessionOriginViewController.m */; };
+		76D335862166DB210085DB7D /* FlurryConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 76D335852166DB210085DB7D /* FlurryConfig.plist */; };
+		76D335892166DB610085DB7D /* LogEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D335882166DB610085DB7D /* LogEventViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0048A303526ABFA1ED47EADE /* libPods-FlurryCoreAnalyticsSampleApp_Obj.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FlurryCoreAnalyticsSampleApp_Obj.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		30512891C0E61F0E28A0AB8B /* Pods-FlurryCoreAnalyticsSampleApp_Obj.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlurryCoreAnalyticsSampleApp_Obj.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlurryCoreAnalyticsSampleApp_Obj/Pods-FlurryCoreAnalyticsSampleApp_Obj.release.xcconfig"; sourceTree = "<group>"; };
 		76D3355A2166D1440085DB7D /* FlurryCoreAnalyticsSampleApp_Obj.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlurryCoreAnalyticsSampleApp_Obj.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76D3355D2166D1440085DB7D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		76D3355E2166D1440085DB7D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +36,20 @@
 		76D335692166D1450085DB7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		76D3356B2166D1450085DB7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76D3356C2166D1450085DB7D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		76D335732166D43B0085DB7D /* FlurryAnalyticsConfiguration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlurryAnalyticsConfiguration.h; sourceTree = "<group>"; };
+		76D335742166D43B0085DB7D /* FlurryAnalyticsConfiguration.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlurryAnalyticsConfiguration.m; sourceTree = "<group>"; };
+		76D335762166D80D0085DB7D /* InfoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
+		76D335772166D80D0085DB7D /* InfoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
+		76D335792166DA010085DB7D /* SettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		76D3357A2166DA010085DB7D /* SettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		76D3357F2166DAA50085DB7D /* LogErrorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LogErrorViewController.h; sourceTree = "<group>"; };
+		76D335802166DAA50085DB7D /* LogErrorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LogErrorViewController.m; sourceTree = "<group>"; };
+		76D335822166DAEA0085DB7D /* SessionOriginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SessionOriginViewController.h; sourceTree = "<group>"; };
+		76D335832166DAEA0085DB7D /* SessionOriginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SessionOriginViewController.m; sourceTree = "<group>"; };
+		76D335852166DB210085DB7D /* FlurryConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = FlurryConfig.plist; sourceTree = "<group>"; };
+		76D335872166DB610085DB7D /* LogEventViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LogEventViewController.h; sourceTree = "<group>"; };
+		76D335882166DB610085DB7D /* LogEventViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LogEventViewController.m; sourceTree = "<group>"; };
+		7C74990B3449A7E9C3EAC750 /* Pods-FlurryCoreAnalyticsSampleApp_Obj.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlurryCoreAnalyticsSampleApp_Obj.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlurryCoreAnalyticsSampleApp_Obj/Pods-FlurryCoreAnalyticsSampleApp_Obj.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +57,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BBAC861E3A5686520AD23C5 /* libPods-FlurryCoreAnalyticsSampleApp_Obj.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4949E621AA29BBA0D96E12CD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0048A303526ABFA1ED47EADE /* libPods-FlurryCoreAnalyticsSampleApp_Obj.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		76D335512166D1440085DB7D = {
 			isa = PBXGroup;
 			children = (
 				76D3355C2166D1440085DB7D /* FlurryCoreAnalyticsSampleApp_Obj */,
 				76D3355B2166D1440085DB7D /* Products */,
+				D23DB8F8B8B4DA1849CAA645 /* Pods */,
+				4949E621AA29BBA0D96E12CD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,8 +93,21 @@
 		76D3355C2166D1440085DB7D /* FlurryCoreAnalyticsSampleApp_Obj */ = {
 			isa = PBXGroup;
 			children = (
+				76D3357F2166DAA50085DB7D /* LogErrorViewController.h */,
+				76D335802166DAA50085DB7D /* LogErrorViewController.m */,
+				76D335822166DAEA0085DB7D /* SessionOriginViewController.h */,
+				76D335832166DAEA0085DB7D /* SessionOriginViewController.m */,
+				76D335852166DB210085DB7D /* FlurryConfig.plist */,
+				76D335872166DB610085DB7D /* LogEventViewController.h */,
+				76D335882166DB610085DB7D /* LogEventViewController.m */,
+				76D335762166D80D0085DB7D /* InfoViewController.h */,
+				76D335772166D80D0085DB7D /* InfoViewController.m */,
+				76D335792166DA010085DB7D /* SettingViewController.h */,
+				76D3357A2166DA010085DB7D /* SettingViewController.m */,
 				76D3355D2166D1440085DB7D /* AppDelegate.h */,
 				76D3355E2166D1440085DB7D /* AppDelegate.m */,
+				76D335732166D43B0085DB7D /* FlurryAnalyticsConfiguration.h */,
+				76D335742166D43B0085DB7D /* FlurryAnalyticsConfiguration.m */,
 				76D335602166D1440085DB7D /* ViewController.h */,
 				76D335612166D1440085DB7D /* ViewController.m */,
 				76D335632166D1440085DB7D /* Main.storyboard */,
@@ -71,6 +119,15 @@
 			path = FlurryCoreAnalyticsSampleApp_Obj;
 			sourceTree = "<group>";
 		};
+		D23DB8F8B8B4DA1849CAA645 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7C74990B3449A7E9C3EAC750 /* Pods-FlurryCoreAnalyticsSampleApp_Obj.debug.xcconfig */,
+				30512891C0E61F0E28A0AB8B /* Pods-FlurryCoreAnalyticsSampleApp_Obj.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,6 +135,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 76D335702166D1450085DB7D /* Build configuration list for PBXNativeTarget "FlurryCoreAnalyticsSampleApp_Obj" */;
 			buildPhases = (
+				F878A993A86D46A6BD01B3AF /* [CP] Check Pods Manifest.lock */,
 				76D335562166D1440085DB7D /* Sources */,
 				76D335572166D1440085DB7D /* Frameworks */,
 				76D335582166D1440085DB7D /* Resources */,
@@ -130,11 +188,33 @@
 			files = (
 				76D3356A2166D1450085DB7D /* LaunchScreen.storyboard in Resources */,
 				76D335672166D1450085DB7D /* Assets.xcassets in Resources */,
+				76D335862166DB210085DB7D /* FlurryConfig.plist in Resources */,
 				76D335652166D1440085DB7D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F878A993A86D46A6BD01B3AF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FlurryCoreAnalyticsSampleApp_Obj-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		76D335562166D1440085DB7D /* Sources */ = {
@@ -142,8 +222,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				76D335622166D1440085DB7D /* ViewController.m in Sources */,
+				76D335812166DAA50085DB7D /* LogErrorViewController.m in Sources */,
+				76D335752166D43B0085DB7D /* FlurryAnalyticsConfiguration.m in Sources */,
+				76D335842166DAEA0085DB7D /* SessionOriginViewController.m in Sources */,
 				76D3356D2166D1450085DB7D /* main.m in Sources */,
+				76D335782166D80D0085DB7D /* InfoViewController.m in Sources */,
 				76D3355F2166D1440085DB7D /* AppDelegate.m in Sources */,
+				76D3357B2166DA010085DB7D /* SettingViewController.m in Sources */,
+				76D335892166DB610085DB7D /* LogEventViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,11 +367,13 @@
 		};
 		76D335712166D1450085DB7D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C74990B3449A7E9C3EAC750 /* Pods-FlurryCoreAnalyticsSampleApp_Obj.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S6JSG6FHB3;
 				INFOPLIST_FILE = FlurryCoreAnalyticsSampleApp_Obj/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -298,11 +386,13 @@
 		};
 		76D335722166D1450085DB7D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30512891C0E61F0E28A0AB8B /* Pods-FlurryCoreAnalyticsSampleApp_Obj.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S6JSG6FHB3;
 				INFOPLIST_FILE = FlurryCoreAnalyticsSampleApp_Obj/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
