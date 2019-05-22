@@ -7,6 +7,10 @@
 //
 
 #import "AppDelegate.h"
+#import "FlurryAnalyticsConfiguration.h"
+#import "Flurry.h"
+
+static NSString * const fileName = @"/setting.plist";
 
 @interface AppDelegate ()
 
@@ -16,8 +20,20 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    NSString *path = [self getPath];
+    // if plist not in user's library, copy default settings, else using existing plist
+    if (![[NSFileManager defaultManager] fileExistsAtPath:path]) {
+        [[NSFileManager defaultManager] copyItemAtPath:[[NSBundle mainBundle]pathForResource:@"FlurryConfig" ofType:@"plist"] toPath:path error:nil];
+    }
     return YES;
+}
+
+- (NSString *) docsDir {
+    return [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)objectAtIndex:0];
+}
+
+- (NSString *) getPath {
+    return [[self docsDir]stringByAppendingString:fileName];
 }
 
 
