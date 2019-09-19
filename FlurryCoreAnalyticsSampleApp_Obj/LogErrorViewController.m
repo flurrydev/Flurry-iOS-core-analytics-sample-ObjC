@@ -76,7 +76,7 @@ static double sAlertDismissTime = 0.35;
         // leave breadcrumbs
         
         [Flurry leaveBreadcrumb:sBreadcrumbsInfo];
-        [self displayAlertWithTitle:@"webview not loading" message:nil dismissAfter:sAlertDismissTime];
+        [self displayAlertWithTitle:@"example: webview not loading" message:nil dismissAfter:sAlertDismissTime];
     } else {
         //crash
         

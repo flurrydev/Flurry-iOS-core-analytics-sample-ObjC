@@ -40,8 +40,8 @@
 		A11DC9988BC73DDAC2E21BBBD7A406BD /* Pods-FlurryCoreAnalyticsSampleApp_Obj.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FlurryCoreAnalyticsSampleApp_Obj.release.xcconfig"; sourceTree = "<group>"; };
 		D3BAF33292E910E054EEE6C3614B2ED5 /* Flurry-iOS-SDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Flurry-iOS-SDK-prefix.pch"; sourceTree = "<group>"; };
 		D7A081096D00CFC519017DB1FB6D7163 /* libPods-FlurryCoreAnalyticsSampleApp_Obj.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-FlurryCoreAnalyticsSampleApp_Obj.a"; path = "libPods-FlurryCoreAnalyticsSampleApp_Obj.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCD90559FFE3613CC9F4D16A40275AAB /* libFlurry_10.0.0.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libFlurry_10.0.0.a; path = Flurry/libFlurry_10.0.0.a; sourceTree = "<group>"; };
 		ECD53989D93B5FAD09E94D30CA57CCA1 /* Pods-FlurryCoreAnalyticsSampleApp_Obj.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FlurryCoreAnalyticsSampleApp_Obj.debug.xcconfig"; sourceTree = "<group>"; };
-		F9AEC925140CBC569A7B525497A40360 /* libFlurry_9.3.1.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libFlurry_9.3.1.a; path = Flurry/libFlurry_9.3.1.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,14 +86,6 @@
 			path = "Target Support Files/Pods-FlurryCoreAnalyticsSampleApp_Obj";
 			sourceTree = "<group>";
 		};
-		46FAC14125E85F6049C391355C147F5A /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				F9AEC925140CBC569A7B525497A40360 /* libFlurry_9.3.1.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		858946F8202315180531C91677D43A26 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -118,9 +110,17 @@
 				513EFBB2414A4FEB79D2F06A03A1FFAA /* FlurryConsent.h */,
 				79D21490334DB3493870BD7A042290B7 /* FlurryEmpty.m */,
 				4B40C572FEDE7630E7FA37024D9343E7 /* FlurrySessionBuilder.h */,
-				46FAC14125E85F6049C391355C147F5A /* Frameworks */,
+				CB59D82FB94D6B59FA175EEBC6D07FF2 /* Frameworks */,
 			);
 			name = FlurrySDK;
+			sourceTree = "<group>";
+		};
+		CB59D82FB94D6B59FA175EEBC6D07FF2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DCD90559FFE3613CC9F4D16A40275AAB /* libFlurry_10.0.0.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
