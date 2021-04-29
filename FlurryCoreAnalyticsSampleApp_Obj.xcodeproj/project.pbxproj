@@ -50,6 +50,7 @@
 		76D335872166DB610085DB7D /* LogEventViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LogEventViewController.h; sourceTree = "<group>"; };
 		76D335882166DB610085DB7D /* LogEventViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LogEventViewController.m; sourceTree = "<group>"; };
 		7C74990B3449A7E9C3EAC750 /* Pods-FlurryCoreAnalyticsSampleApp_Obj.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlurryCoreAnalyticsSampleApp_Obj.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlurryCoreAnalyticsSampleApp_Obj/Pods-FlurryCoreAnalyticsSampleApp_Obj.debug.xcconfig"; sourceTree = "<group>"; };
+		CAE4861B263B44AF00824EDB /* FlurryCoreAnalyticsSampleApp_Obj.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FlurryCoreAnalyticsSampleApp_Obj.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +94,7 @@
 		76D3355C2166D1440085DB7D /* FlurryCoreAnalyticsSampleApp_Obj */ = {
 			isa = PBXGroup;
 			children = (
+				CAE4861B263B44AF00824EDB /* FlurryCoreAnalyticsSampleApp_Obj.entitlements */,
 				76D3357F2166DAA50085DB7D /* LogErrorViewController.h */,
 				76D335802166DAA50085DB7D /* LogErrorViewController.m */,
 				76D335822166DAEA0085DB7D /* SessionOriginViewController.h */,
@@ -370,6 +372,7 @@
 			baseConfigurationReference = 7C74990B3449A7E9C3EAC750 /* Pods-FlurryCoreAnalyticsSampleApp_Obj.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FlurryCoreAnalyticsSampleApp_Obj/FlurryCoreAnalyticsSampleApp_Obj.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S6JSG6FHB3;
 				INFOPLIST_FILE = FlurryCoreAnalyticsSampleApp_Obj/Info.plist;
@@ -380,7 +383,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.flurry.FlurryCoreAnalyticsSampleApp-Obj";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 1;
+				SUPPORTS_MACCATALYST = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -389,6 +393,7 @@
 			baseConfigurationReference = 30512891C0E61F0E28A0AB8B /* Pods-FlurryCoreAnalyticsSampleApp_Obj.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FlurryCoreAnalyticsSampleApp_Obj/FlurryCoreAnalyticsSampleApp_Obj.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S6JSG6FHB3;
 				INFOPLIST_FILE = FlurryCoreAnalyticsSampleApp_Obj/Info.plist;
@@ -399,7 +404,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.flurry.FlurryCoreAnalyticsSampleApp-Obj";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 1;
+				SUPPORTS_MACCATALYST = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

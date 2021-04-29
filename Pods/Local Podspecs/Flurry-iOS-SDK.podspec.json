@@ -1,0 +1,97 @@
+{
+  "name": "Flurry-iOS-SDK",
+  "version": "11.2.1.catalyst",
+  "summary": "Flurry SDK for iOS",
+  "license": {
+    "type": "Commercial",
+    "file": "Licenses/Flurry-LICENSE.txt"
+  },
+  "description": "FlurrySDK consists of: Flurry for analytics tracking and reporting.",
+  "homepage": "http://developer.yahoo.com/flurry",
+  "authors": {
+    "Flurry": "integration@flurry.com"
+  },
+  "source": {
+    "git": "https://github.com/flurry/Flurry-iOS-SDK.git",
+    "tag": "11.2.1.catalyst"
+  },
+  "platforms": {
+    "ios": "9.0",
+    "tvos": "9.0"
+  },
+  "requires_arc": false,
+  "default_subspecs": "FlurrySDK",
+  "subspecs": [
+    {
+      "name": "FlurrySDK",
+      "platforms": {
+        "ios": "9.0",
+        "tvos": "9.0"
+      },
+      "ios": {
+        "frameworks": [
+          "Foundation",
+          "SystemConfiguration",
+          "UIKit",
+          "Security"
+        ],
+        "vendored_frameworks": [
+          "Flurry.xcframework",
+          "CrashReporter.xcframework"
+        ]
+      },
+      "tvos": {
+        "frameworks": [
+          "Foundation",
+          "SystemConfiguration",
+          "UIKit",
+          "Security"
+        ]
+      },
+      "vendored_frameworks": "Flurry.xcframework"
+    },
+    {
+      "name": "FlurryTVOS",
+      "platforms": {
+        "tvos": "9.0"
+      },
+      "frameworks": [
+        "Foundation",
+        "SystemConfiguration",
+        "UIKit",
+        "Security"
+      ],
+      "tvos": {
+        "vendored_frameworks": "Flurry.xcframework"
+      }
+    },
+    {
+      "name": "FlurryConfig",
+      "platforms": {
+        "ios": "9.0"
+      },
+      "ios": {
+        "vendored_frameworks": "FlurryConfig.xcframework"
+      },
+      "dependencies": {
+        "Flurry-iOS-SDK/FlurrySDK": [
+
+        ]
+      }
+    },
+    {
+      "name": "FlurryMessaging",
+      "platforms": {
+        "ios": "9.0"
+      },
+      "ios": {
+        "vendored_frameworks": "FlurryMessaging.xcframework"
+      },
+      "dependencies": {
+        "Flurry-iOS-SDK/FlurrySDK": [
+
+        ]
+      }
+    }
+  ]
+}

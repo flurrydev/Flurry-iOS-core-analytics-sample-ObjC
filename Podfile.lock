@@ -1,16 +1,18 @@
 PODS:
-  - Flurry-iOS-SDK/FlurrySDK (11.2.0)
+  - Flurry-iOS-SDK (11.2.1.catalyst):
+    - Flurry-iOS-SDK/FlurrySDK (= 11.2.1.catalyst)
+  - Flurry-iOS-SDK/FlurrySDK (11.2.1.catalyst)
 
 DEPENDENCIES:
-  - Flurry-iOS-SDK/FlurrySDK
+  - Flurry-iOS-SDK (from `~/Flurry-iOS-core-analytics-sample-ObjC/Pods/Flurry-Catalyst-Beta`)
 
-SPEC REPOS:
-  trunk:
-    - Flurry-iOS-SDK
+EXTERNAL SOURCES:
+  Flurry-iOS-SDK:
+    :path: "~/Flurry-iOS-core-analytics-sample-ObjC/Pods/Flurry-Catalyst-Beta"
 
 SPEC CHECKSUMS:
-  Flurry-iOS-SDK: 6636d30c30f12010e7c7c71d84b443416a168efc
+  Flurry-iOS-SDK: 20d0241d6892e3c704541876d8ceb2296ee96d76
 
-PODFILE CHECKSUM: c04de8cf29acc805be7fbb8c3199e263cfd70a8b
+PODFILE CHECKSUM: 39aaeff436e94068418c023fe3f0293627f67aa7
 
-COCOAPODS: 1.10.0
+COCOAPODS: 1.10.1
