@@ -57,6 +57,9 @@ static double sAlertDismissTime = 0.35;
             return @"Log Event Delayed";
         case FlurryEventAnalyticsDisabled:
             return @"Log Event Analytics Disabled";
+        case FlurryEventParametersMismatched:
+            return @"Log Event parameters mismatched";
+            break;
     }
 }
 

@@ -193,10 +193,11 @@ static NSString * const fileName = @"/setting.plist";
         [Flurry setUserID:[config userId]];
     }
     BOOL crashReport = [[NSString stringWithFormat:@"%@", [config enableCrashReport]] isEqualToString:@"0"] ? NO : YES;
-    FlurrySessionBuilder* builder = [[[[[FlurrySessionBuilder new] withLogLevel:FlurryLogLevelDebug]
-                                       withCrashReporting:crashReport]
-                                      withSessionContinueSeconds:[sessionSecondsTextField.text integerValue]]
-                                     withAppVersion:appVersionTextField.text];
+    FlurrySessionBuilder* builder = [[[[[[FlurrySessionBuilder new] withLogLevel:FlurryLogLevelDebug]
+                                        withCrashReporting:crashReport]
+                                       withSessionContinueSeconds:[sessionSecondsTextField.text integerValue]]
+                                      withAppVersion:appVersionTextField.text]
+                                     withLogLevel:FlurryLogLevelAll];
     [Flurry startSession:apiKeyTextField.text withSessionBuilder:builder];
     
 }
