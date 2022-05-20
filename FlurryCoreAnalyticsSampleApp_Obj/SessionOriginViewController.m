@@ -7,7 +7,7 @@
 //
 
 #import "SessionOriginViewController.h"
-#import "Flurry.h"
+@import Flurry_iOS_SDK;
 
 @interface SessionOriginViewController ()
 

@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import "FlurryAnalyticsConfiguration.h"
-#import "Flurry.h"
+
 
 static NSString * const fileName = @"/setting.plist";
 

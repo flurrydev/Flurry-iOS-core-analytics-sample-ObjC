@@ -8,7 +8,9 @@
 
 #import "SettingViewController.h"
 #import "FlurryAnalyticsConfiguration.h"
-#import "Flurry.h"
+
+@import Flurry_iOS_SDK;
+
 
 static NSString * const fileName = @"/setting.plist";
 
