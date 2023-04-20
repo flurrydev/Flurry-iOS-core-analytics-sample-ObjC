@@ -36,13 +36,13 @@
 /* Begin PBXFileReference section */
 		0AA50F8FE411C4BC45FF19F64C1053F2 /* Flurry-iOS-SDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Flurry-iOS-SDK.release.xcconfig"; sourceTree = "<group>"; };
 		12B222B3C548D81597BDB19F6332405C /* Pods-FlurryCoreAnalyticsSampleApp_Obj-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FlurryCoreAnalyticsSampleApp_Obj-acknowledgements.plist"; sourceTree = "<group>"; };
-		33C64F4997ACB940DD732CB79BF63D3B /* Flurry.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = Flurry.xcframework; sourceTree = "<group>"; };
 		539B95C9C30C1B5C6FAA0CC4AFD9048B /* Flurry-iOS-SDK-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Flurry-iOS-SDK-xcframeworks.sh"; sourceTree = "<group>"; };
 		550096F9DE5329041FA34A56424E1315 /* Pods-FlurryCoreAnalyticsSampleApp_Obj-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FlurryCoreAnalyticsSampleApp_Obj-dummy.m"; sourceTree = "<group>"; };
 		588888EA23D50F502601035BF6D89A67 /* Flurry-iOS-SDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Flurry-iOS-SDK.debug.xcconfig"; sourceTree = "<group>"; };
 		7A8AE940644F78EE63B4CC18190DF814 /* Pods-FlurryCoreAnalyticsSampleApp_Obj-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FlurryCoreAnalyticsSampleApp_Obj-acknowledgements.markdown"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A11DC9988BC73DDAC2E21BBBD7A406BD /* Pods-FlurryCoreAnalyticsSampleApp_Obj.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FlurryCoreAnalyticsSampleApp_Obj.release.xcconfig"; sourceTree = "<group>"; };
+		BFCFB550BBF0AAED12ED5525CF1F9EC9 /* Flurry_iOS_SDK.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = Flurry_iOS_SDK.xcframework; sourceTree = "<group>"; };
 		D7A081096D00CFC519017DB1FB6D7163 /* Pods-FlurryCoreAnalyticsSampleApp_Obj */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "Pods-FlurryCoreAnalyticsSampleApp_Obj"; path = "libPods-FlurryCoreAnalyticsSampleApp_Obj.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7E2AD24F2B8E496CEEAC61D373D8DF7 /* CrashReporter.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = CrashReporter.xcframework; sourceTree = "<group>"; };
 		ECD53989D93B5FAD09E94D30CA57CCA1 /* Pods-FlurryCoreAnalyticsSampleApp_Obj.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FlurryCoreAnalyticsSampleApp_Obj.debug.xcconfig"; sourceTree = "<group>"; };
@@ -67,10 +67,18 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		2B5FFA2FF7893BB18F2DA10102B4076B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BFCFB550BBF0AAED12ED5525CF1F9EC9 /* Flurry_iOS_SDK.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2F3394442A871575467FA6881E3C4B79 /* FlurrySDK */ = {
 			isa = PBXGroup;
 			children = (
-				C49982C8819336EB67B17CD537112C3F /* Frameworks */,
+				2B5FFA2FF7893BB18F2DA10102B4076B /* Frameworks */,
 			);
 			name = FlurrySDK;
 			sourceTree = "<group>";
@@ -113,14 +121,6 @@
 				FCC6D62E776B9317E33DB205BC58E743 /* Frameworks */,
 			);
 			name = CrashReporter;
-			sourceTree = "<group>";
-		};
-		C49982C8819336EB67B17CD537112C3F /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				33C64F4997ACB940DD732CB79BF63D3B /* Flurry.xcframework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -205,8 +205,8 @@
 		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1240;
-				LastUpgradeCheck = 1240;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 9.3";
